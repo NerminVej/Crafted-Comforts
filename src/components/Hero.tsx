@@ -1,5 +1,8 @@
 import React from "react";
 import heroImage from "../assets/hero-image.svg";
+import logo from "../assets/logo.svg";
+import cartIcon from "../assets/cart-icon.svg";
+import searchIcon from "../assets/search-icon.svg";
 
 export const Hero = () => {
   return (
@@ -11,6 +14,8 @@ export const Hero = () => {
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
       }}
-    ></div>
+    >
+    
+    </div>
   );
 };
