@@ -15,7 +15,12 @@ export const Hero = () => {
         backgroundSize: "cover",
       }}
     >
-    
+      <div className="relative w-full max-w-[1490px] flex items-center justify-between pt-10 mx-auto px-10"></div>
+      <ul className="hidden md:flex items-center gap-10 lg:grap-[60px]">
+        <li>
+            fsd
+        </li>
+      </ul>
     </div>
   );
 };
