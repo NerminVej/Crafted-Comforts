@@ -22,9 +22,13 @@ export const Hero = () => {
         backgroundSize: "cover",
       }}
     >
-      <div className="relative w-full max-w-[1490px] flex items-center justify-between pt-10 mx-auto px-10"></div>
+      <div
+        className="relative w-full max-w-[1490px] flex 
+        items-center justify-between pt-10 mx-auto px-10"
+      ></div>
       <img src={logo} />
-      <ul className="hidden md:flex items-center gap-10 lg:grap-[60px]">
+      <ul className="hidden md:flex items-center gap-10 lg:gap-[68px]">
+        {" "}
         <NavLink to="services">Service </NavLink>
         <NavLink to="products">Shop </NavLink>
         <NavLink to="reference">Reference </NavLink>
