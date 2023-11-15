@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import heroImage from "../assets/hero-image.svg";
 import logo from "../assets/logo.svg";
 import cartIcon from "../assets/cart-icon.svg";
@@ -11,6 +11,7 @@ import { HiMenuAlt3 } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
 
 export const Hero = () => {
+  const [showMobileMenu, setShowMobileMenu] = useState<boolean>(false);
   return (
     <div
       className="h-screen relative flex flex-col items-center"
@@ -31,7 +32,11 @@ export const Hero = () => {
       </ul>
 
       <img src={cartIcon} className="hidden md:block cursor-pointer" />
-      <HiMenuAlt3 />
+      <HiMenuAlt3
+        size={30}
+        className="block md:hidden cursor-pointer text-white"
+        onClick={() => setShowMobileMenu((prev) => !prev)}
+      />
     </div>
   );
 };
