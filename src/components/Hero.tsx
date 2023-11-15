@@ -24,6 +24,8 @@ export const Hero = () => {
         <NavLink to="reference">Reference </NavLink>
         <NavLink to="care">Care </NavLink>
       </ul>
+
+      <img src={cartIcon} className="hidden md:block cursor-pointer" />
     </div>
   );
 };
