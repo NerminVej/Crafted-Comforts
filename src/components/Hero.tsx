@@ -5,6 +5,11 @@ import cartIcon from "../assets/cart-icon.svg";
 import searchIcon from "../assets/search-icon.svg";
 import NavLink from "./NavLink";
 
+import { heroTitle, heroSubtitle } from "../utils/data.ts";
+
+import { HiMenuAlt3 } from "react-icons/hi";
+import { AiOutlineClose } from "react-icons/ai";
+
 export const Hero = () => {
   return (
     <div
@@ -26,6 +31,7 @@ export const Hero = () => {
       </ul>
 
       <img src={cartIcon} className="hidden md:block cursor-pointer" />
+      <HiMenuAlt3 />
     </div>
   );
 };
