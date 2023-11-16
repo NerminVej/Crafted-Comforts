@@ -51,7 +51,18 @@ export const Hero = () => {
           size={25}
           className="absolute top-5 right-5 cursor-pointer"
         />
-        
+        <NavLink to="services" mobileMenu>
+          Service{" "}
+        </NavLink>
+        <NavLink to="products" mobileMenu>
+          Shop{" "}
+        </NavLink>
+        <NavLink to="reference" mobileMenu>
+          Reference{" "}
+        </NavLink>
+        <NavLink to="care" mobileMenu>
+          Care{" "}
+        </NavLink>
       </div>
     </div>
   );
