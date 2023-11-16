@@ -41,6 +41,18 @@ export const Hero = () => {
         className="block md:hidden cursor-pointer text-white"
         onClick={() => setShowMobileMenu((prev) => !prev)}
       />
+
+      <div
+        className={`block md:hidden w-full fixed ${
+          !showMobileMenu ? "-top-[410px]" : "top-0"
+        } left-0 bg-[#dde0e5] h-[410px] transition-all duration-[800ms] shadow-xl z-10 py-8 px-12 rounded-b-xl`}
+      >
+        <AiOutlineClose
+          size={25}
+          className="absolute top-5 right-5 cursor-pointer"
+        />
+        
+      </div>
     </div>
   );
 };
