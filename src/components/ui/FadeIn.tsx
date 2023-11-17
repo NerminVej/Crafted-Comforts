@@ -1,19 +1,20 @@
+import { motion, useAnimation, useInView } from "framer-motion";
+
 import { useEffect, useRef } from "react";
 
 const FadeIn = ({ children, delay, direction, fullWidth, padding }) => {
-  
-    const ref = useRef(null);
+  const ref = useRef(null);
 
+  const isInView = useInView(ref, { once: true });
+  const controls = useAnimation();
 
-  
-    useEffect(() => {
-      
-    }, [, ]);
-  
-  
-  return <div>
+  useEffect(() => {
+    if (isInView) {
+      controls.start("visible");
+    }
+  }, [isInView, controls]);
 
-  </div>;
+  return <div></div>;
 };
 
 export default FadeIn;
