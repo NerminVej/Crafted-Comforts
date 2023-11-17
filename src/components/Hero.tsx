@@ -50,19 +50,24 @@ export const Hero = () => {
         <AiOutlineClose
           size={25}
           className="absolute top-5 right-5 cursor-pointer"
+          onClick={() => setShowMobileMenu(false)}
         />
-        <NavLink to="services" mobileMenu>
-          Service{" "}
-        </NavLink>
-        <NavLink to="products" mobileMenu>
-          Shop{" "}
-        </NavLink>
-        <NavLink to="reference" mobileMenu>
-          Reference{" "}
-        </NavLink>
-        <NavLink to="care" mobileMenu>
-          Care{" "}
-        </NavLink>
+
+        <ul className="pt-[60px] items-center flex flex-col gap-8">
+          <NavLink to="services" mobileMenu>
+            Services
+          </NavLink>
+          <NavLink to="products" mobileMenu>
+            Shop
+          </NavLink>
+          <NavLink to="reference" mobileMenu>
+            Reference
+          </NavLink>
+          <NavLink to="care" mobileMenu>
+            Care
+          </NavLink>
+        </ul>
+        <img src={cartIcon} className="mt-8 mx-auto cursor-pointer" alt="" />
       </div>
     </div>
   );
