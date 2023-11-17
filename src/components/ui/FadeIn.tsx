@@ -1,8 +1,18 @@
-import React from "react";
+import { useEffect, useRef } from "react";
 
-const FadeIn = () => {
+const FadeIn = ({ children, delay, direction, fullWidth, padding }) => {
+  
+    const ref = useRef(null);
+
+
+  
+    useEffect(() => {
+      
+    }, [, ]);
+  
+  
   return <div>
-    
+
   </div>;
 };
 
