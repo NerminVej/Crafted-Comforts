@@ -3,12 +3,13 @@ import heroImage from "../assets/hero-image.svg";
 import logo from "../assets/logo.svg";
 import cartIcon from "../assets/cart-icon.svg";
 import searchIcon from "../assets/search-icon.svg";
-import NavLink from "./NavLink";
+import NavLink from "./ui/NavLink.tsx";
 
 import { heroTitle, heroSubtitle } from "../utils/data.ts";
 
 import { HiMenuAlt3 } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
+import FadeIn from "./ui/FadeIn.tsx";
 
 export const Hero = () => {
   const [showMobileMenu, setShowMobileMenu] = useState<boolean>(false);
@@ -70,6 +71,14 @@ export const Hero = () => {
           <img src={cartIcon} className="mt-8 mx-auto cursor-pointer" alt="" />
         </div>
       </div>
+      
+      
+      <FadeIn delay={0.2} direction="down" padding fullWidth>
+        <h1 className="mt-[90px] text-center text-5xl leading-tight xs:text-[64px] text-white max-w-[1050px]">
+          {heroTitle}
+        </h1>
+      </FadeIn>
+
       
     </div>
   );
