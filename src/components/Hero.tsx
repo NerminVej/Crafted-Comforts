@@ -79,6 +79,12 @@ export const Hero = () => {
         </h1>
       </FadeIn>
 
+      <FadeIn delay={0.4} direction="down" padding fullWidth>
+        <h5 className="mt-6 text-center text-lg xs:text-xl text-white max-w-[500px]">
+          {heroSubtitle}
+        </h5>
+      </FadeIn>
+
       
     </div>
   );
