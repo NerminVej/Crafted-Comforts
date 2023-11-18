@@ -1,13 +1,13 @@
-import shippingIcon from "./assets/free-shiping-icon.svg";
-import paymentIcon from "./assets/quick-payment-icon.svg";
-import supportIcon from "./assets/support-icon.svg";
-import productOneIcon from "./assets/product-one.svg";
-import productTwoIcon from "./assets/produc-two.svg";
-import productThreeIcon from "./assets/product-three.svg";
-import plantIcon from "./assets/plant-icon.svg";
-import sunIcon from "./assets/sun-icon.svg";
-import waterIcon from "./assets/water-icon.svg";
-import temperatureIcon from "./assets/temperature-icon.svg";
+import shippingIcon from "../assets/free-shiping-icon.svg";
+import paymentIcon from "../assets/quick-payment-icon.svg";
+import supportIcon from "../assets/support-icon.svg";
+import productOneIcon from "../assets/product-one.svg";
+import productTwoIcon from "../assets/produc-two.svg";
+import productThreeIcon from "../assets/product-three.svg";
+import plantIcon from "../assets/plant-icon.svg";
+import sunIcon from "../assets/sun-icon.svg";
+import waterIcon from "../assets/water-icon.svg";
+import temperatureIcon from "../assets/temperature-icon.svg";
 
 export const heroTitle = "Bring Serenity to Your Place With Interior Plants";
 export const heroSubtitle =
