@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import heroImage from "../assets/hero-image.svg";
 import logo from "../assets/logo.svg";
 import cartIcon from "../assets/cart-icon.svg";
@@ -85,7 +85,22 @@ export const Hero = () => {
         </h5>
       </FadeIn>
 
-      
+      <FadeIn delay={0.2} direction="up" padding fullWidth>
+        <div className="relative w-full xs:w-[460px] mt-11">
+          <input
+            type="text"
+            placeholder="Search"
+            className="rounded-full w-full pl-6 pr-[68px] py-4 bg-primary outline-none text-white
+              text-base xs:text-lg placeholder-white"
+          />
+          <img
+            src={searchIcon}
+            alt=""
+            className="absolute top-2/4 -translate-y-2/4 right-3 h-11 w-11 cursor-pointer"
+          />
+        </div>
+      </FadeIn>
+
     </div>
   );
 };
