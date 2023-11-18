@@ -1,8 +1,22 @@
 import { motion, useAnimation, useInView } from "framer-motion";
 
-import { useEffect, useRef } from "react";
+import { ReactNode, useEffect, useRef } from "react";
 
-const FadeIn = ({ children, delay, direction, fullWidth, padding }) => {
+interface FadeInProps {
+  children: ReactNode;
+  delay: number;
+  direction: "up" | "down" | "left" | "right";
+  fullWidth: boolean;
+  padding: boolean;
+}
+
+const FadeIn: React.FC<FadeInProps> = ({
+  children,
+  delay,
+  direction,
+  fullWidth,
+  padding,
+}) => {
   const ref = useRef(null);
 
   const isInView = useInView(ref, { once: true });
