@@ -37,17 +37,17 @@ export const productsBtnText = "See Colection";
 export const products = [
   {
     title: "Golden Pothos",
-    price: "$65.99",
+    price: "65.99€",
     img: productOneIcon,
   },
   {
     title: "Rubber Plant",
-    price: "$75.00",
+    price: "75.00€",
     img: productTwoIcon,
   },
   {
     title: "Cast Iron Plant",
-    price: "$88.50",
+    price: "88.50€",
     img: productThreeIcon,
   },
 ];
