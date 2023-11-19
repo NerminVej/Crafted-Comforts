@@ -7,8 +7,9 @@ import imageThree from "../assets/image-three.svg";
 import FadeIn from "./ui/FadeIn";
 
 export const Reference = () => {
-  return     <div id="reference" className="mb-[160px] px-10 max-w-[1490px] mx-auto">
-        <FadeIn delay={0.2} direction="down">
+  return (
+    <div id="reference" className="mb-[160px] px-10 max-w-[1490px] mx-auto">
+      <FadeIn delay={0.2} direction="down">
         <h1 className="text-5xl lg:text-[64px] font-medium text-fontBlack mb-6 text-center">
           {referenceTitle}
         </h1>
@@ -19,6 +20,19 @@ export const Reference = () => {
         </h5>
       </FadeIn>
 
-      
-  </div>;
+      <div className="flex flex-col md:flex-row md:justify-center gap-8">
+        <FadeIn delay={0.2} direction="right">
+          <div className="flex flex-col gap-8">
+            <img src={imageOne} alt="" />
+            <img src={imageTwo} alt="" />
+          </div>
+        </FadeIn>
+        <FadeIn delay={0.2} direction="left">
+          <div>
+            <img src={imageThree} alt="" />
+          </div>
+        </FadeIn>
+      </div>
+    </div>
+  );
 };
