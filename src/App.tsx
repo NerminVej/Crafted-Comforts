@@ -1,12 +1,14 @@
 import { useState } from "react";
 
 import { Hero } from "./components/Hero";
+import Services from "./components/Services";
 
 function App() {
 
   return (
     <div>
       <Hero />
+      <Services />
     </div>
   );
 }
