@@ -18,10 +18,39 @@ const Care = () => {
         </h5>
       </FadeIn>
 
-      <FadeIn delay={0.6} direction="right" fullWidth={false} padding={false}>
+      <div className="flex flex-col lg:flex-row gap-8">
+        <div className="flex flex-col gap-8 items-start">
+          {careList.map((item, i) => (
+            <FadeIn
+              key={i}
+              delay={(i + 1) * 0.2}
+              direction="left"
+              fullWidth={false}
+              padding={false}
+            >
+              <div className="flex flex-col xs:flex-row gap-6 items-center xs:items-start">
+                <img
+                  src={item.img}
+                  alt={item.title}
+                  className="h-[88px] w-[68px]"
+                />
+                <div>
+                  <h3 className="text-center xs:text-start mb-2 text-2xl lg:text-[28px] text-fontBlack font-medium">
+                    {item.title}
+                  </h3>
+                  <h6 className="text-center xs:text-start text-base lg:text-lg text-fontGray font-medium">
+                    {item.subtitle}
+                  </h6>
+                </div>
+              </div>
+            </FadeIn>
+          ))}
+        </div>
+
+        <FadeIn delay={0.6} direction="right" fullWidth={false} padding={false}>
           <img src={imageFour} alt="plants" />
         </FadeIn>
-
+      </div>
     </div>
   );
 };
