@@ -15,7 +15,7 @@ import FadeIn from "./ui/FadeIn.tsx";
 /*
 TODO:
 Create a better deisgned mobile menu I am not happy yet with the design of that.
-
+Can add a hover effect to the pictures.
 */
 
 export const Hero = () => {
