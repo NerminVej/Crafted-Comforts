@@ -12,6 +12,12 @@ import { AiOutlineClose } from "react-icons/ai";
 
 import FadeIn from "./ui/FadeIn.tsx";
 
+/*
+TODO:
+Create a better deisgned mobile menu I am not happy yet with the design of that.
+
+*/
+
 export const Hero = () => {
   const [showMobileMenu, setShowMobileMenu] = useState<boolean>(false);
   return (
