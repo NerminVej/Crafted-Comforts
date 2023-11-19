@@ -28,7 +28,7 @@ export const Hero = () => {
         className="relative w-full max-w-[1490px] flex 
         items-center justify-between pt-10 mx-auto px-10"
       >
-        <img src={logo} alt="" />
+        <h1 className="font-bold text-2xl text-white">Crafted Comforts</h1>
         <ul className="hidden md:flex items-center gap-10 lg:gap-[68px]">
           <NavLink to="services">Services</NavLink>
           <NavLink to="products">Shop</NavLink>
