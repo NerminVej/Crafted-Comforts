@@ -89,7 +89,7 @@ export const Footer = () => {
         <div className="w-full h-[1px] bg-white my-12" />
 
         <h6 className="text-white text-center text-base lg:text-lg">
-          &copy; Daunku - All rights reserved
+          &copy; Crafted Comforts - All rights reserved
         </h6>
       </div>
     </div>
