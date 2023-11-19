@@ -13,7 +13,7 @@ const Products = () => {
       className="flex flex-col 2xl:flex-row gap-[128px] 2xl:gap-2 2xl:justify-between mt-[160px] 2xl:mt-[270px] mb-[160px] max-w-[1490px]
       mx-auto px-10 w-full"
     >
-      <FadeIn delay={0.2} direction="right">
+      <FadeIn delay={0.2} direction="right" fullWidth={false} padding={false}>
         <div className="flex flex-col">
           <h1 className="text-center 2xl:text-start text-fontBlack text-5xl lg:text-[64px] font-medium mb-6">
             {productsTitle}
@@ -33,7 +33,13 @@ const Products = () => {
 
       <div className="w-full flex flex-col md:flex-row gap-[160px] md:gap-6">
         {products.map((product, i) => (
-          <FadeIn key={i} delay={(i + 1) * 0.2} direction="left" fullWidth>
+          <FadeIn
+            key={i}
+            delay={(i + 1) * 0.2}
+            direction="left"
+            fullWidth={true}
+            padding={false}
+          >
             <div className="h-[510px] relative flex-1 bg-[#C1D0E4] rounded-[50px] max-w-[500px]">
               <img
                 src={product.img}
