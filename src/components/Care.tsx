@@ -11,6 +11,14 @@ const Care = () => {
           {careTitle}
         </h1>
       </FadeIn>
+
+      <FadeIn delay={0.4} direction="down" fullWidth={false} padding={false}>
+        <h5 className="text-[#4F4F4F] text-lg xs:text-xl mb-12">
+          {careSubtitle}
+        </h5>
+      </FadeIn>
+
+
     </div>
   );
 };
