@@ -18,6 +18,9 @@ const Care = () => {
         </h5>
       </FadeIn>
 
+      <FadeIn delay={0.6} direction="right" fullWidth={false} padding={false}>
+          <img src={imageFour} alt="plants" />
+        </FadeIn>
 
     </div>
   );
