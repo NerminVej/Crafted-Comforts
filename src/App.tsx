@@ -5,6 +5,7 @@ import Services from "./components/Services";
 import Products from "./components/Products";
 import { Reference } from "./components/Reference";
 import Care from "./components/Care";
+import { Footer } from "./components/Footer";
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <Products />
       <Reference />
       <Care />
+      <Footer />
     </div>
   );
 }
