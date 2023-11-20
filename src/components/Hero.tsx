@@ -1,5 +1,6 @@
 import { useState } from "react";
 import heroImage from "../assets/hero-image.svg";
+import heroImage2 from "../assets/heroImage2.jpg";
 import logo from "../assets/logo.svg";
 import cartIcon from "../assets/cart-icon.svg";
 import searchIcon from "../assets/search-icon.svg";
@@ -24,7 +25,7 @@ export const Hero = () => {
     <div
       className="h-screen relative flex flex-col items-center"
       style={{
-        background: `url(${heroImage})`,
+        background: `url(${heroImage2})`,
         backgroundPosition: "bottom",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
@@ -80,12 +81,12 @@ export const Hero = () => {
       </div>
 
       <FadeIn delay={0.2} direction="down" padding fullWidth>
-        <h1 className="mt-[90px] text-center text-5xl leading-tight xs:text-[64px] text-white max-w-[1050px]">
+        <h1 className="mt-[90px] text-center text-5xl leading-tight xs:text-[64px] text-black max-w-[1050px]">
           {heroTitle}
         </h1>
       </FadeIn>
       <FadeIn delay={0.4} direction="down" padding fullWidth>
-        <h5 className="mt-6 text-center text-lg xs:text-xl text-white max-w-[500px]">
+        <h5 className="mt-6 text-center text-lg xs:text-xl text-black max-w-[500px]">
           {heroSubtitle}
         </h5>
       </FadeIn>
