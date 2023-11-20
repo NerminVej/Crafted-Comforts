@@ -1,7 +1,5 @@
 import { useState } from "react";
-import heroImage from "../assets/hero-image.svg";
 import heroImage2 from "../assets/heroImage2.jpg";
-import logo from "../assets/logo.svg";
 import cartIcon from "../assets/cart-icon.svg";
 import searchIcon from "../assets/search-icon.svg";
 import NavLink from "./ui/NavLink.tsx";
@@ -13,11 +11,6 @@ import { AiOutlineClose } from "react-icons/ai";
 
 import FadeIn from "./ui/FadeIn.tsx";
 
-/*
-TODO:
-Create a better deisgned mobile menu I am not happy yet with the design of that.
-Can add a hover effect to the pictures.
-*/
 
 export const Hero = () => {
   const [showMobileMenu, setShowMobileMenu] = useState<boolean>(false);
