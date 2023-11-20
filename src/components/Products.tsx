@@ -5,6 +5,7 @@ import starsIcon from "../assets/stars-icon.svg";
 import plusIcon from "../assets/plus-icon.svg";
 
 import FadeIn from "./ui/FadeIn";
+import Product from "./Product";
 
 const Products = () => {
   return (
@@ -33,39 +34,7 @@ const Products = () => {
 
       <div className="w-full flex flex-col md:flex-row gap-[160px] md:gap-6">
         {products.map((product, i) => (
-          <FadeIn
-            key={i}
-            delay={(i + 1) * 0.2}
-            direction="left"
-            fullWidth={true}
-            padding={false}
-          >
-            <div className="h-[510px] relative flex-1 bg-[#C1D0E4] rounded-[50px] max-w-[500px]">
-              <img
-                src={product.img}
-                alt=""
-                className="absolute -top-[120px] left-1/2 -translate-x-1/2"
-              />
-              <div className="absolute bottom-0 w-full bg-white h-[260px] rounded-[50px] shadow-md px-8 py-[26px] flex flex-col justify-between">
-                <div>
-                  <h2 className="mb-2 text-fontBlack text-3xl lg:text-[32px] font-medium">
-                    {product.title}
-                  </h2>
-                  <img src={starsIcon} alt="" />
-                </div>
-                <div className="flex justify-between items-center">
-                  <h3 className="text-fontBlack text-2xl lg:text-3xl font-medium">
-                    {product.price}
-                  </h3>
-                  <img
-                    src={plusIcon}
-                    alt=""
-                    className="cursor-pointer h-10 xs:h-12 w-10 xs:w-12"
-                  />
-                </div>
-              </div>
-            </div>
-          </FadeIn>
+          <Product key={i} product={product} index={i} />
         ))}
       </div>
     </div>
